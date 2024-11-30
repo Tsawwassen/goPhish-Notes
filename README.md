@@ -6,4 +6,5 @@
   * submitted data is viewable on the dashboard
 * TODO
   * The pages need some TLCSS.
-  * Get an idea of what company we would want to get people to spoof, make the page from that using the currecnt template files. 
+  * Get an idea of what company we would want to get people to spoof, make the page from that using the currecnt template files.
+  * Need to find a way to keep the server running after powerShell is closed
