@@ -6,14 +6,18 @@
   * submitted data is viewable on the dashboard
  
 * TODO
-  * Get an idea of what company we would want to get people to spoof, make the page from that using the currecnt template files, adn what email will send it.
-    * if we use Microsoft, most people don't know their password anyway. I would expect them to email us asking for it, and we would hopefully ask them why they need it, we see the email, and should (in a real world scenario) tell them its a phishing email
-      * maybe just do a click here to make new password type email / form 
-    * if we use something from their personal life (like amazon) they might wonder why they got an email to their work account about their personal account
-    * System 5? WindWard? BambooHR? Zuper?
-  * Need a better email to send the phishing from.
-    * my 'mitchell.test.smith@gmail.com' email is a little obvious...
-    * The difficult thing will be is to find the one time password from what ever email domain we use.
+  * email is getting quarantined by microsoft
+  * even tried a basic text email and it still got blocked (need to confirm tomorrow)
+  * Checked the header in chrome, and it looks much nicer then the MS one
+    *  The 'From" header shows 'Zuper <zuper.create@gmail.com> Using gophish'...
+    *  don't have a 'Reply-To: john.doe@example.com' header
+    *  the 'Message-ID' is <1733280058127825077.4695.2989063290088956566@gophishTest> not <1234567890@mail.example.com>
+    *  'X-Mailer: gophish' but should be X-Mailer: Microsoft Outlook 16.0 (?)
+    *  don't have 'X-Originating-IP: [192.0.2.1]'
+    *  return path has '<>' but example doesnt?
+    *  missing 'X-Priority: 3 (Normal)'
+    
+ 
    
 * DONE
   * Need to find a way to keep the server running after powerShell is closed
@@ -24,4 +28,8 @@
     * Wasn;t that easy to find for gmail. eventually found a link to it on some randome forum
   * The pages/email received some TLC(SS).
   * Have full campaign work flow that sends a MS reset email, sends you to a MS reset page, captures user submitted data, redirects to MS page on submit
+  * Get an idea of what company we would want to get people to spoof, make the page from that using the currecnt template files, adn what email will send it.
+    * using zuper
+ * Need a better email to send the phishing from.
+    * created qa dummy gmail zuper aggounr
 
