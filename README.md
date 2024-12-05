@@ -31,5 +31,12 @@
   * Get an idea of what company we would want to get people to spoof, make the page from that using the currecnt template files, adn what email will send it.
     * using zuper
  * Need a better email to send the phishing from.
-    * created qa dummy gmail zuper aggounr
+    * created qa dummy gmail zuper aggou
+    *
+---------------------------------------------------------- 
+------------------
+--- keeping the server running---
+-------------------
+
+'nohup sudo ./gophish & '
 
