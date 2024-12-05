@@ -1,4 +1,4 @@
-# goPhish-Notes ( https://52.229.114.219:3333/ )
+# goPhish-Notes ( https://52.229.114.219:3333/ ) v2 4.239.104.108:3333
 * currently have the campaign is able to
   * sending an email
   * tracking when the email is opened* (the email click template doesnt seem to track when the email is opened, but the previous version does. Need to look into that)
